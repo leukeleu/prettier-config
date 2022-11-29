@@ -1,6 +1,6 @@
 {
   "name": "@leukeleu/prettier-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Reusable Prettier config for Leukeleu projects",
   "main": "index.js",
   "scripts": {
