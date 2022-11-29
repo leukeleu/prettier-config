@@ -1,4 +1,4 @@
-# Frontend checks
+# Leukeleu Prettier configuration
 
 ## Installing this package
 
