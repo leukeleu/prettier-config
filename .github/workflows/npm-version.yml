@@ -1,0 +1,29 @@
+name: Bump NPM version
+
+on:
+  workflow_dispatch:
+    inputs:
+      release-type:
+        description: 'Release type (one of): patch, minor, major, prepatch, preminor, premajor, prerelease'
+        required: true
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Git configuration
+        run: |
+          git config --global user.email "<>"
+          git config --global user.name "GitHub Actions Bot"
+
+      - name: Bump version
+        run: npm version ${{ github.event.inputs.release-type }}
+
+      - name: Push changes to repository
+        run: git push origin && git push --tags
