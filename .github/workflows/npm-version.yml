@@ -19,8 +19,8 @@ jobs:
 
       - name: Git configuration
         run: |
-          git config --global user.email "<>"
-          git config --global user.name "GitHub Actions Bot"
+          git config user.name "Leukeleu Deployer"
+          git config user.email "deployer@leukeleu.nl"
 
       - name: Bump version
         run: npm version ${{ github.event.inputs.release-type }}
