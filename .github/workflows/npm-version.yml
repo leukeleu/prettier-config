@@ -26,4 +26,4 @@ jobs:
         run: npm version ${{ github.event.inputs.release-type }}
 
       - name: Push changes to repository
-        run: git push https://${{ secrets.DEPLOYER_RELEASE_TOKEN }}:x-oauth-basic@github.com/leukeleu/prettier-config.git && git push https://${{ secrets.DEPLOYER_RELEASE_TOKEN }}:x-oauth-basic@github.com/leukeleu/prettier-config.git --tags
+        run: git push https://${{ secrets.DEPLOYER_RELEASE_TOKEN }}:x-oauth-basic@github.com/leukeleu/prettier-config.git --force && git push https://${{ secrets.DEPLOYER_RELEASE_TOKEN }}:x-oauth-basic@github.com/leukeleu/prettier-config.git --tags --force
