@@ -5,7 +5,7 @@ on:
     types: [published]
 
 jobs:
-  bump:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
