@@ -28,3 +28,7 @@ module.exports = {
   semi: true,
 }
 ```
+
+## Contributing
+
+To learn how to local test and publish this package, please refer to the instructions in the `CONTRIBUTORS.md` file.
