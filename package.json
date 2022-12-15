@@ -1,5 +1,6 @@
 {
   "name": "@leukeleu/prettier-config",
+  "repository": "https://github.com/leukeleu/prettier-config.git",
   "version": "1.2.1",
   "description": "Reusable Prettier config for Leukeleu projects",
   "main": "index.js",
