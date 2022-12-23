@@ -13,7 +13,7 @@
     "prettier"
   ],
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "prettier": "2.8.0",
     "prettier-plugin-tailwindcss": "0.2.0"
   }
