@@ -8,7 +8,7 @@ Then install this package as a development dependency `npm i -D @leukeleu/pretti
 
 ## Adding the config
 
-In your `prettier.config.js` add:
+In your `.prettierrc.js` add:
 
 ```js
 module.exports = require('@leukeleu/prettier-config')
