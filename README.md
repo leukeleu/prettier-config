@@ -26,7 +26,6 @@ To run Prettier on your code, add the following script to your package.json:
 }
 ```
 
-
 ## Running the check
 
 Now you can run the Prettier check using `npm run lint:prettier` or `npm run lintfix:prettier` to auto fix.
