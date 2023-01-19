@@ -14,16 +14,16 @@ In your `.prettierrc.js` add:
 module.exports = require('@leukeleu/prettier-config')
 ```
 
-## Add commands to package.json
+## Add script commands to package.json
 
-Add the following the package.json:
+To run Prettier on your code, add the following script to your package.json:
 
 ```js
-    "prettier": "prettier . --cache",
-    "lint:prettier": "npm run prettier -- --check",
-    "lintfix:prettier": "npm run prettier -- --write",
-```
-
+"scripts": {
+  "prettier": "prettier . --cache",
+  "lint:prettier": "npm run prettier -- --check",
+  "lintfix:prettier": "npm run prettier -- --write",
+}
 ## Running the check
 
 Now you can run the Prettier check using `npm run lint:prettier` or `npm run lintfix:prettier` to auto fix.
