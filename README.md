@@ -14,9 +14,21 @@ In your `.prettierrc.js` add:
 module.exports = require('@leukeleu/prettier-config')
 ```
 
+## Add script commands to package.json
+
+To run Prettier on your code, add the following script to your package.json:
+
+```js
+"scripts": {
+  "prettier": "prettier . --cache",
+  "lint:prettier": "npm run prettier -- --check",
+  "lintfix:prettier": "npm run prettier -- --write",
+}
+```
+
 ## Running the check
 
-You can just use the normal Prettier cli to run the check e.g. `prettier --check .`
+Now you can run the Prettier check using `npm run lint:prettier` or `npm run lintfix:prettier` to auto fix.
 
 ## Extending/ changing config
 
