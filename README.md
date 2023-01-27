@@ -26,6 +26,10 @@ To run Prettier on your code, add the following script to your package.json:
 }
 ```
 
+## Adding an ignore file
+
+By default prettier will lint [specific filetypes](https://prettier.io/docs/en/index.html). If you want to ignore files you can [create a file named `.prettierignore`](https://prettier.io/docs/en/ignore.html) in the root and add ignored file(types) to it.
+
 ## Running the check
 
 Now you can run the Prettier check using `npm run lint:prettier` or `npm run lintfix:prettier` to auto fix.
